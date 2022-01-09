@@ -1,0 +1,33 @@
+.cal_body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.cal_contant{
+    box-shadow: 5px 5px 50px darkgray;
+    width: 250px;
+    height: 400px;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+    background-color: rgba(15, 7, 43, 0.295);
+}
+.input input{
+    width: 90%;
+    text-align: left;
+    margin: 10px;
+    height: 30px;
+    border: 2px solid rgb(255, 255, 255) ;
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.row{
+    margin: 12px;
+}
+.row button{
+    padding: 10px 15px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px darkgray;
+    border-radius: 5px;
+}

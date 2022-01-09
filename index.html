@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cal_body">
+        <div class="cal_contant">
+            <div class="input">
+                <input  id="display" type="text" value="" placeholder="0">
+            </div>
+            <div class="row">
+                <button onclick="display.value = null">C</button>
+                <button onclick=" calculate(this.innerText ) ">/</button>
+                <button onclick=" calculate(this.innerText ) ">*</button>
+                <button onclick="backSpace()"> < </button>
+            </div>
+            <div class="row">
+                <button id="7" onclick=" calculate(this.innerText ) " >7</button>
+                <button onclick=" calculate(this.innerText ) ">8</button>
+                <button onclick=" calculate(this.innerText ) ">9</button>
+                <button onclick=" calculate(this.innerText ) ">-</button>
+            </div>
+            <div class="row">
+                <button onclick=" calculate(this.innerText ) ">6</button>
+                <button onclick=" calculate(this.innerText ) ">5</button>
+                <button onclick=" calculate(this.innerText ) ">4</button>
+                <button onclick=" calculate(this.innerText ) ">+</button>
+            </div>
+            <div class="row">
+                <button onclick=" calculate(this.innerText ) ">3</button>
+                <button onclick=" calculate(this.innerText ) ">2</button>
+                <button onclick=" calculate(this.innerText ) ">1</button>
+                <button onclick=" calculate(this.innerText ) ">.</button>
+            </div>
+            <div class="row">
+                <button onclick=" calculate(this.innerText ) ">(</button>
+                <button onclick=" calculate(this.innerText ) ">0</button>
+                <button onclick=" calculate(this.innerText ) ">)</button>
+                <button onclick="display.value=eval(display.value)">=</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function calculate(x) {
+            display.value = display.value + x;
+        }
+        function backSpace(){
+            display.value =display.value.slice(0, - 1);
+        }
+
+    </script>
+</body>
+</html>
